@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1626423783 source:c:\users\srich\documents\algorithmdesign\algorithms\closestpair.cpp
+	<iostream>
+	<vector>
+	<cmath>
+	<functional>
+
