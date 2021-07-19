@@ -32,8 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="closestPair.cpp" />
-		<Unit filename="mergeSort.cpp" />
+		<Unit filename="quickSort.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
