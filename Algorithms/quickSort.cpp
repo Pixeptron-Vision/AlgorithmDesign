@@ -41,8 +41,8 @@ int Partition(T1& A, int low, int high)
     A[low] = A[i-1];
     A[i-1] = pivot;
 
-    cout<<"Part:- Low-"<<low<<" High-"<<high<<" Part:-"<<i<<endl;
-    Display(A);
+    //cout<<"Part:- Low-"<<low<<" High-"<<high<<" Part:-"<<i<<endl;
+    //Display(A);
     return i;
 }
 
