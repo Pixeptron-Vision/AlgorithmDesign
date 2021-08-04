@@ -1,6 +1,7 @@
 #include <iostream>
 #include <utility>
 #include <vector>
+#include <random>
 using namespace std;
 template<typename T>
 void Display(const T& A)
@@ -14,6 +15,14 @@ void Display(const T& A)
 template<typename T1>
 int Partition(T1& A, int low, int high)
 {
+    /*
+    std::random_device rd; // obtain a random number from hardware
+    std::mt19937 gen(rd()); // seed the generator
+    std::uniform_int_distribution<> distr(low, high); // define the range
+    //Random Gen code source: https://stackoverflow.com/questions/7560114/random-number-c-in-some-range
+    int rand = distr(gen);
+    cout<<"Random Num:- "<<rand<<endl;
+    */
     int pivot = A[low];
     int j;
     int i=low+1;
@@ -41,8 +50,8 @@ int Partition(T1& A, int low, int high)
     A[low] = A[i-1];
     A[i-1] = pivot;
 
-    //cout<<"Part:- Low-"<<low<<" High-"<<high<<" Part:-"<<i<<endl;
-    //Display(A);
+    cout<<"Part:- Low-"<<low<<" High-"<<high<<" Part:-"<<i<<endl;
+    Display(A);
     return i;
 }
 
@@ -54,7 +63,7 @@ void quickSort(T& A,int low, int high)
     {
         int barrier = Partition<T>(A,low,high);
         quickSort(A,low,barrier-1);
-        quickSort(A,barrier,high);
+        quickSort(A,barrier+1,high);
     }
 
 }
