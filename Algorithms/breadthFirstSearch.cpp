@@ -117,6 +117,7 @@ int main()
     cin>>n;
     cout<<"Enter the number of Edges:\n";
     cin>>e;
+    cout<<"Enter the Edge list. Example: 1 0 <-` 1 2 <-` 0 2 <-`\n";
     vector<pair<int,int>>edges;
     for(int i=0;i<e;++i)
     {
