@@ -7,7 +7,7 @@
 * Merge Sort
 * Quick Sort
 * Longest Common Subsequence
-* BFS , Shortest Path
+* BFS, Shortest Path using BFS
 * DFS
 
 
