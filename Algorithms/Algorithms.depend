@@ -22,3 +22,18 @@
 	<utility>
 	<deque>
 
+1628299766 source:c:\users\srich\documents\algorithmdesign\algorithms\depthfirstsearch.cpp
+	<iostream>
+	<vector>
+	<utility>
+	<deque>
+
+1628350101 source:c:\users\srich\documents\algorithmdesign\algorithms\insertionsort.cpp
+	<iostream>
+	<vector>
+
+1628777897 source:c:\users\srich\documents\algorithmdesign\algorithms\topologicalsort.cpp
+	<iostream>
+	<vector>
+	<utility>
+

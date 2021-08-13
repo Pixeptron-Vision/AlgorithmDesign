@@ -46,7 +46,9 @@ vector<int> depthFirstSearch(vector<vector<int>>nodeList, int start)
         lastIn--;
         int v = *lastIn;
         Q.pop_back();
-        for(auto it=nodeList[v].begin();it!=nodeList[v].end();it++)
+        auto it=nodeList[v].end();
+        it--;
+        for(;it!=nodeList[v].begin();it--)
         {
             if(visitedNodeFlags[*it]==0)
             {
@@ -100,7 +102,7 @@ int main()
     int s;
     cin>>s;
     vector<int>path=depthFirstSearch(graph,s);
-    cout<<"Depth First Traversal Sequence of given Graph:-\n";
+    cout<<"Depth First Traversal Sequence (using Stack) of given Graph:-\n";
     for(int i=0;i<path.size();i++)
     {
         cout<<path[i]<<" ";
@@ -109,7 +111,7 @@ int main()
     int visitedNodeList[n];
     for(int i=0;i<n;++i)visitedNodeList[i]=0;
     path = depthFirstSearchRecursive(graph,s,visitedNodeList);
-    cout<<"Depth First Traversal Sequence (Recursive - Left to right) of given Graph:-\n";
+    cout<<"Depth First Traversal Sequence (Recursive) of given Graph:-\n";
     for(int i=0;i<path.size();i++)
     {
         cout<<path[i]<<" ";

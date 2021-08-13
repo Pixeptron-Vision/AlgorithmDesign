@@ -9,5 +9,6 @@
 * Longest Common Subsequence
 * BFS, Shortest Path using BFS
 * DFS
+* Binary Search
 
 
