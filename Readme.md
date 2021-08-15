@@ -13,6 +13,6 @@
 * Topological Sort
 * Connected Components in undirected Graph using BFS
 * Kosaraju Two Pass Algo for finding Significant Connected Components in Directed graphs
-* Dijkstra's Shortest Path
+* Heap Sort (without heapify - time taken for insertion O(n log(n) ))
 
 
