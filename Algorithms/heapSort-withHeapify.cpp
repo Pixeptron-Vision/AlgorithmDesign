@@ -18,6 +18,11 @@ class Heap
     }
     void insertBehind(T element, int position)
     {
+        /*
+         This function is used in sorting the heap elements stored in the vector in-place.
+         Task: 1. Left shift all the elements to the right of the last heap elements
+               2. Append the element, next to the current right of the last heap element.
+        */
         for(int i=vec.size()-1;i>position;i--)
         {
             vec[i]=vec[i-1];
@@ -26,6 +31,10 @@ class Heap
     }
     bool checkViolation(int childIndex, int parentIndex)
     {
+        /*
+         Violation => For max heap, a parent node is not greater than any or both of the children
+                      For min heap, a parent node is not less than any or both of the children
+        */
         if(childIndex<=heapLastIndex && parentIndex <=heapLastIndex)
         {
             if(isMaxHeap)
@@ -137,8 +146,19 @@ public:
     }
     void Heapify(int n)
     {
-
-        if( n > 0 && (2*n < heapLastIndex))
+        /*
+        Step-1: Check if the node has any children if not, decrement the node index and recurse
+        Step-2: If the node has children, check which one among the two children is greater
+        Step-3: If child-1 / child-2 violates the heap property for the current node:
+            a. Swap parent and child
+            b. Recurse on the child to ensure its daughters follow the heap principle
+        Step-4: If there is no violation, decrement the node index and recurse to exit
+        */
+        if (n > 0 && (2*n > heapLastIndex))
+        {
+            Heapify(--n);
+        }
+        else if( n > 0 && (2*n < heapLastIndex))
         {
             bool isChild1 = vec[2*n] > vec[2*n+1]? true:false;
             if(isChild1 && checkViolation(2*n,n))
@@ -155,10 +175,6 @@ public:
                 vec[n]=temp;
                 Heapify(2*n+1);
             }
-            Heapify(--n);
-        }
-        else if(n > 0 && (2*n > heapLastIndex))
-        {
             Heapify(--n);
         }
 
