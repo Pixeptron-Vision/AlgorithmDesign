@@ -37,7 +37,11 @@
 	<vector>
 	<utility>
 
-1629052289 source:c:\users\srich\documents\algorithmdesign\algorithms\heapsort-withoutheapify.cpp
+1629062519 source:c:\users\srich\documents\algorithmdesign\algorithms\heapsort-withoutheapify.cpp
+	<iostream>
+	<vector>
+
+1629301874 source:c:\users\srich\documents\algorithmdesign\algorithms\heapsort-withheapify.cpp
 	<iostream>
 	<vector>
 

@@ -32,7 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="dijkstra.cpp" />
+		<Unit filename="heapSort-withHeapify.cpp" />
+		<Unit filename="heapSort-withoutHeapify.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
