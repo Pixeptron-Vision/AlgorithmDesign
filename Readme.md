@@ -2,6 +2,8 @@
 ### This repository contains C++ implementations for various standard algorithms. 
 
 ### List of Algorithms covered: 
+* Bubble sort and Kth element selection 
+* Insertion Sort
 * Closest Pair
 * Count Inversions
 * Merge Sort
