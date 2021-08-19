@@ -4,6 +4,7 @@
 ### List of Algorithms covered: 
 * Bubble sort and Kth element selection 
 * Insertion Sort
+* Selection Sort and Kth element selection
 * Closest Pair
 * Count Inversions
 * Merge Sort
